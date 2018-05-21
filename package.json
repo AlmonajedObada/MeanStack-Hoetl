@@ -1,0 +1,30 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "web project third year",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlmonajedObada/Web-project.git"
+  },
+  "keywords": [
+    "web",
+    "hotel",
+    "meanStack",
+    "angular"
+  ],
+  "author": "obada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlmonajedObada/Web-project/issues"
+  },
+  "homepage": "https://github.com/AlmonajedObada/Web-project#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.0-beta4"
+  }
+}

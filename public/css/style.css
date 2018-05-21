@@ -1,0 +1,128 @@
+#myVideo {
+    background-attachment: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -99 !important;
+}
+
+.jumbotron {
+    background-image: url('../images/skyBar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.bg {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.news:focus {
+    outline-width: none !important;
+    background-color: transparent;
+}
+
+#menu {
+    background: none !important;
+    transform: scale(1);
+    transition-duration: 1s;
+    position: fixed;
+}
+
+#menu:hover {
+    background: none !important;
+    color: gold !important;
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+#menu2 {
+    background: none !important;
+    transform: rotate(0deg);
+    transition-duration: 1s;
+    position: fixed;
+}
+
+#menu2:hover {
+    background: none !important;
+    color: gold !important;
+    transform: rotate(30deg);
+    transition-duration: 1s;
+}
+
+.prvi {
+    width: 100% !important;
+}
+
+.prvi:hover {
+    cursor: pointer !important;
+    background-color: goldenrod !important;
+    color: gold !important;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+    text-align: center;
+}
+
+#loading-image {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    z-index: 100;
+}
+
+.index {
+    transition: ease-in all 0.5s;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+}
+
+.index:hover {
+    opacity: 1;
+    animation: flash 1.2s;
+    -webkit-animation: flash 1.2s;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*.jumbotron {
+    background-image: url('images/room.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}*/
