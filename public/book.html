@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Hotel Online System</title>
+    <link rel="icon" type="image/ico" href="images/home.ico" />
+    <meta name="author" content="combe">
+    <meta name="keywords" content="Hotel, bosnia, reserve, sarajevo, apartment">
+    <meta name="description" content="Hotel online system for check and reserve a hotel room for your holiday ">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script> -->
+    <!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+ -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js" integrity="sha256-MMt0/21G3z0Zg4ET1kI3HC9npItDowkitRDVr0FhCxA="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="loaders.min.css" />
+
+    
+
+    <script type="text/javascript">
+        $(function () {
+            var scroll = new SmoothScroll('a[href*="#top"');
+        });
+    </script> -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+
+
+    <!-- <style>
+        body {
+            background-color: gold;
+        }
+
+        .loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 999;
+            transform: scale(4);
+        }
+    </style> -->
+</head>
+
+<body id="body">
+    <!-- data-spy="scroll" -->
+
+    <!-- prealod <div class="loader">
+        <div class="loader-inner ball-scale-ripple-multiple">
+        </div>
+    </div> -->
+
+
+
+    <section class="bg">
+        <div>
+            <!-- class="bg-primary" style="opacity:0.7;" -->
+            <div class="offset-lg-4 ">
+                <div class="card" style="width: 22rem; margin-top:50px;background:none !important; border:none;">
+                    <div class="card-body text-center">
+                        <h3 class="card-title text-uppercase text-primary display-3" style="margin-left:0px !important; width: 400px !important;">BOOK</h3>
+                    </div>
+                    <form action="/booking" method="post" ng-app="book" ng-controller="book" name="book" novalidate>
+                    <div class="row">
+                        <div class="col-3">
+                            <input type="radio" id="room1" name="room" ng-model="room1" hidden>
+                            <label for="room1">
+                                <img src="images/events.jpg" alt="room1" class=" mb-3" height="75" width="75">
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" id="room2" name="room"  ng-model="room2" hidden>
+                            <label for="room2">
+                                <img src="images/events.jpg" alt="room1" class=" mb-3" height="75" width="75">
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" id="room3" name="room"  ng-model="room3" hidden>
+                            <label for="room3">
+                                <img src="images/events.jpg" alt="room1" class=" mb-3" height="75" width="75">
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" id="room4" name="room"  ng-model="room4" hidden>
+                            <label for="room4">
+                                <img src="images/events.jpg" alt="room1" class=" mb-3" height="75" width="75">
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" id="room5" name="room"  ng-model="room5" hidden>
+                            <label for="room5">
+                                <img src="images/events.jpg" alt="room1" class=" mb-3" height="75" width="75">
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" id="room6" name="room"  ng-model="room6" hidden>
+                            <label for="room6">
+                                <img src="images/events.jpg" alt="room1" class=" mb-3" height="75" width="75">
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" id="room7" name="room"  ng-model="room7" hidden>
+                            <label for="room7">
+                                <img src="images/events.jpg" alt="room1" class=" mb-3" height="75" width="75">
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <ul class="list-group list-group-flush" style="margin-top:-20px;">
+
+                        <li class="list-group-item bg-info" style="border:none; margin-top:-20px; background:none !important;">
+                            <input type="date" style="width:400px; height: 50px; background: none !important; border: none; border-bottom: 1px solid black;"
+                                required="" name="checkIn" id="checkIn" ng-model="checkIn">
+                        </li>
+                        <span style="color:red" class="offset-1" ng-show="book.checkIn.$dirty && book.checkIn.$invalid">
+                                <span ng-show="book.checkIn.$error.required">Please select check-in date!!! </span>
+                            </span>
+                        <!--<li class="list-group-item bg-info" style="border:none; margin-top:-20px; background:none !important;">
+                                <input type="password" placeholder="*****" class="form-control" style="max-width:400px;" required="">
+                            </li>-->
+                    </ul>
+                    <table>
+                        <tr>
+                            <td>
+                                <div style="margin-left:18px;">
+                                    <input type="date" style="width:400px !important; height: 50px; background: none !important; border: none; border-bottom: 1px solid black;"
+                                        required name="checkOut" id="checkOut" ng-model="checkOut"> 
+                                        
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="color:red" class="offset-1" ng-show="book.checkOut.$dirty && book.checkOut.$invalid">
+                                    <span ng-show="book.checkOut.$error.required">Please select check-out date!!!</span>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="margin-left:18px;">
+                                    <input type="number" placeholder="Adults number..." style="width:400px !important; height: 50px; background: none !important; border: none; border-bottom: 1px solid black;"
+                                        required name="adults" id="adults" ng-model="adults">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="color:red" class="offset-1" ng-show="book.adults.$dirty && book.adults.$invalid">
+                                    <span ng-show="book.adults.$error.required">Please select check-out date!!!</span>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="margin-left:18px;">
+                                    <input type="number" placeholder="Child number..." style="width:400px !important; height: 50px; background: none !important; border: none; border-bottom: 1px solid black;"
+                                        required name="child" id="child" ng-model="child">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <span style="color:red" class="offset-1" ng-show="book.child.$dirty && book.child.$invalid">
+                                        <span ng-show="book.child.$error.required">Please select check-out date!!!</span>
+                                    </span>
+                                </td>
+                            </tr>
+                    </table>
+                    <div class="card-body text-center col-2 offset-5">
+                        <button type="submit" class="btn  btn-primary btn-lg text-white" ng-disabled="book.checkIn.$untouched  && book.checkIn.$invalid || book.checkOut.$untouched  && book.checkOut.$invalid || book.adults.$dirty && book.adults.$invalid  || book.child.$dirty && book.child.$invalid || book.adults.$untouched || book.child.$untouched">Book
+                        </button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="text-center text-primary col-2 offset-5">
+                <p style="font-size:25px;">&copy; 2018 COMBE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- angular preload <script>
+        $('section').hide();
+        $('article').hide();
+        $('footer').hide();
+        $(window).on({
+            load: function () {
+                $('.loader').hide();
+                $('article').show();
+                document.getElementById('body').style.backgroundColor = "silver ";
+                $('section').show();
+
+            }
+        });
+    </script> -->
+
+
+
+</body>
+
+</html>

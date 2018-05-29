@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Hotel Online System</title>
+    <link rel="icon" type="image/ico" href="images/home.ico" />
+    <meta name="author" content="combe">
+    <meta name="keywords" content="Hotel, bosnia, reserve, sarajevo, apartment">
+    <meta name="description" content="Hotel online system for check and reserve a hotel room for your holiday ">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script> -->
+    <!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+ -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js" integrity="sha256-MMt0/21G3z0Zg4ET1kI3HC9npItDowkitRDVr0FhCxA="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="loaders.min.css" />
+
+    
+
+    <script type="text/javascript">
+        $(function () {
+            var scroll = new SmoothScroll('a[href*="#top"');
+        });
+    </script> -->
+
+   <!--  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+
+
+    <!-- <style>
+        body {
+            background-color: gold;
+        }
+
+        .loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 999;
+            transform: scale(4);
+        }
+    </style> -->
+</head>
+
+<body>
+
+
+    <section id="jumbotronFeedback" class="jumbotron2 jumbotron-fluid text-white d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <h1 class="display-1 text-primary text-uppercase">COMBRERO</h1>
+            <p class="display-4 d-none d-sm-block">HOTEL</p>
+            <p class="lead text-uppercase" style="font-size:26px;">Please tale some time I give us your opinion</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="display-4 text-center text-info mb-5 mt-4">Write your opinion about our Hotel, services, rooms</h2>
+        <form action = "/feedback" method="post" ng-app="feedback" ng-controller="feedback" name="feedback" novalidate>
+        <div class="col-9 offset-3">
+            <textarea cols="50" rows="10" class="form-control" style="max-width:550px;margin-left:50px;" placeholder="Your opinion here..." name="text" id="text" ng-model="text" required></textarea>
+            <span style="color:red" class="offset-1" ng-show="feedback.text.$dirty && feedback.text.$invalid">
+                <span ng-show="feedback.text.$error.required"> Please write your opinion!!! </span>
+            </span>
+        </div>
+       
+        <div class="col-lg-6 offset-5 ">
+            <input type="submit" ng-disabled="feedback.text.$dirty && feedback.text.$invalid" class="btn btn-lg btn-outline-success mt-3 ml-5 mb-2" value="SEND" />
+        </div>
+    </form>
+    </section>
+
+
+
+</body>
+
+</html>
