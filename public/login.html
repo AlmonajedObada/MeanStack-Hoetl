@@ -82,59 +82,63 @@
                         <h3 class="card-title text-uppercase text-primary" style="margin-left:0px !important; width: 400px !important;">LOGIN</h3>
                     </div>
                     <form action="/login" method="post" ng-app="login" ng-controller="login" name="login" novalidate>
-                    <ul class="list-group list-group-flush" style="margin-top:-20px;">
+                        <ul class="list-group list-group-flush" style="margin-top:-20px;">
 
-                        <li class="list-group-item bg-info" style="border:none; margin-top:-20px; background:none !important;">
-                            <input type="email" placeholder="you@example.com" class="form-control " style="width:400px; height: 50px; background: none !important; border: none; border-bottom: 1px solid black;"
-                                required="" name="email" id="email" ng-model="email">
-                        </li>
-                        <span style="color:gold" class="offset-1" ng-show="login.email.$dirty && login.email.$invalid">
+                            <li class="list-gropu-item bg-info" style="border:none; margin-top:-20px; background:none !important;">
+                                <input type="email" placeholder="you@example.com" class="form-control" style="width:400px; height: 50px; background: none !important; border: none; border-bottom:1px solid black;"
+                                    required="" name="email" id="email" ng-model="email">
+                            </li>
+                            <span style="color:gold" class="offset-1" ng-show="login.email.$dirty && login.email.$invalid">
                                 <span ng-show="login.email.$error.required"> Please enter your email!!! </span>
                                 <span ng-show="login.email.$error.email">Please enter validated email!!!.</span>
                             </span>
-                        <!--<li class="list-group-item bg-info" style="border:none; margin-top:-20px; background:none !important;">
+                            <!--<li class="list-group-item bg-info" style="border:none; margin-top:-20px; background:none !important;">
                                 <input type="password" placeholder="*****" class="form-control" style="max-width:400px;" required="">
                             </li>-->
-                    </ul>
-                    <table>
-                        <tr>
-                            <td>
-                                <div style="margin-left:18px;">
-                                    <input type="{{text}}" placeholder="*****" class="form-control" style="width:400px !important; height: 50px; background: none !important; border: none; border-bottom: 1px solid black;"
-                                        required id="password" name="password" ng-model="password">
-                                </div>
-                            </td>
-                            <td>
-                                <button type="button"  ng-click="see()" name="eye" id="eye" class="btn btn-primary" style="margin-left:-44px !important; height: 50px; width:45px; border: none; ">
-                                    <i class="fas fa-eye"></i>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="margin-left:18px;">
+                                        <input type="{{text}}" placeholder="*****" class="form-control" style="width:400px !important; height:50px; background:none !important; border:none; border-bottom:1px solid black;"
+                                                required id="password" name="password" ng-model="password">
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button" ng-click="see()" name="eye" id="eye" class= "btn btn-primary" style="margin-left:-44px !important; height:50px; width:45px; border:none;">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span style="color:gold" class="offset-1" ng-show="login.password.$invalid">
+                                        <span ng-show="login.password.$error.required">Please enter password!!!</span>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="row no-gutters">
+                            <div class="col-8">
+                                <a href="#!register" class="badge ml-3 text-danger" style="text-decoration:none;">
+                                    <span style="font-size:13px;">No account?</span>
+                                </a>
+                            </div>   
+                            <div class="col-4">
+                                <a href="#!change" class="badge ml-5 text-danger" style="text-decoration:none;">
+                                    <span style="font-size:13px;">Forgot password?</span>
+                                </a>
+                            </div> 
+                            </div>
+                            <div class="card-body text-center col-2 offset-5">
+                                <button type="submit" class="btn btn-primary text-white" ng-disabled="login.email.$dirty && login.email.$invalid ||login.password.$dirty && login.password.$invalid">Login
+                                    <i class="fas fa-sign-in-alt ml-2"></i>
                                 </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span style="color:gold" class="offset-1" ng-show="login.password.$dirty && login.password.$invalid">
-                                    <span ng-show="login.password.$error.required"> Please enter password!!! </span>
-                                </span>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="row no-gutters">
-                        <div class="col-8">
-                            <a href="register.html" class="badge ml-3 text-danger" style="text-decoration:none;">
-                                <span style="font-size:13px;">No account?</span>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#!change" class="badge ml-5 text-danger" style="text-decoration:none;">
-                                <span style="font-size:13px;">Forgot password?</span>
-                            </a>
+                            </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="card-body text-center col-2 offset-5">
-                        <button type="submit" class="btn btn-primary text-white" ng-disabled=" login.email.$dirty && login.email.$invalid || login.password.$dirty && login.password.$invalid">Login
-                            <i class="fas fa-sign-in-alt ml-2"></i>
-                        </button>
-                    </div>
+                 
                 </form>
                 </div>
             </div>
