@@ -98,13 +98,13 @@
                                 <span ng-show="registerForm.lastName.$error.required"> Please enter your last name!!! </span>
                             </span>
                             <li class="list-group-item bg-info" style="border:none; margin-top:-20px; background:none !important;">
-                                <input type="email" placeholder="you@example.com" class="form-control " style="width:400px; height: 50px; background: none !important; border: none; border-bottom: 1px solid black;" 
+                                <input type="email" placeholder="you@example.com" class="form-control" style="width:400px; height:50px; background: none !important; border: none; border-bottom:1px solid black;"
                                     required="" name="email" id="email" ng-model="email">
                             </li>
                             <span style="color:gold" class="offset-1" ng-show="registerForm.email.$dirty && registerForm.email.$invalid">
-                                    <span ng-show="registerForm.email.$error.required"> Please enter your email!!! </span>
-                                    <span ng-show="registerForm.email.$error.email">Please enter validated email!!!.</span>
-                                </span>
+                                <span ng-show="registerForm.email.$error.required"> Please enter your email!!! </span>
+                                <span ng-show="registerForm.email.$error.email">Please enter validated email!!!.</span>
+                            </span>
                             <!--<li class="list-group-item bg-info" style="border:none; margin-top:-20px; background:none !important;">
                                 <input type="password" placeholder="*****" class="form-control" style="max-width:400px;" required="">
                             </li>-->
@@ -134,14 +134,14 @@
                         <div style="margin-top:-10px;">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item bg-info" style="background:none !important;">
-                                    <a href="login.html" class="badge text-danger" style="text-decoration:none;">
+                                    <a href="#!login" class="badge text-danger" style="text-decoration:none;">
                                         <span style="font-size:13px;">Already has account?</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="card-body text-center" style="margin-left:100px !important; ">
-                            <button type="submit" class="btn btn-primary text-white" ng-disabled="registerForm.firstName.$dirty && registerForm.firstName.$invalid || registerForm.lastName.$dirty && registerForm.lastName.$invalid || registerForm.email.$dirty && registerForm.email.$invalid || registerForm.password.$dirty && registerForm.password.$invalid">Sign up for free
+                            <button type="submit" class="btn btn-primary text-white" ng-disabled="registerForm.firstName.$dirty && registerForm.firstName.$invalid || registerForm.lastName.$dirty && registerForm.lastName.$invalid || registerForm.email.$dirty && registerForm.email.$invalid || registerForm.password.$dirty && registerForm.password.$invalid ||registerForm.firstName.$untouched || registerForm.lastName.$untouched || registerForm.email.$untouched || registerForm.password.$untouched">Sign up for free
                                 <i class="fas fa-user-plus ml-2"></i>
                             </button>
                         </div>
