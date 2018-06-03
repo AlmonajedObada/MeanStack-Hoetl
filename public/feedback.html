@@ -78,14 +78,14 @@
         <h2 class="display-4 text-center text-info mb-5 mt-4">Write your opinion about our Hotel, services, rooms</h2>
         <form action = "/feedback" method="post" ng-app="feedback" ng-controller="feedback" name="feedback" novalidate>
         <div class="col-9 offset-3">
-            <textarea cols="50" rows="10" class="form-control" style="max-width:550px;margin-left:50px;" placeholder="Your opinion here..." name="text" id="text" ng-model="text" required></textarea>
-            <span style="color:red" class="offset-1" ng-show="feedback.text.$dirty && feedback.text.$invalid">
+            <textarea cols="50" rows="10" class="form-control" style="max-width:550px;margin-left:50px;" placeholder="Your opinion here..." name="opinion" id="opinion" ng-model="text" required></textarea>
+            <span style="color:red" class="offset-1" ng-show="feedback.opinion.$dirty && feedback.opinion.$invalid">
                 <span ng-show="feedback.text.$error.required"> Please write your opinion!!! </span>
             </span>
         </div>
        
         <div class="col-lg-6 offset-5 ">
-            <input type="submit" ng-disabled="feedback.text.$dirty && feedback.text.$invalid" class="btn btn-lg btn-outline-success mt-3 ml-5 mb-2" value="SEND" />
+            <input type="submit" ng-disabled="feedback.opinion.$dirty && feedback.opinion.$invalid || feedback.opinion.$untouched" class="btn btn-lg btn-outline-success mt-3 ml-5 mb-2" value="SEND" />
         </div>
     </form>
     </section>
